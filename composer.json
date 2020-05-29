@@ -1,0 +1,21 @@
+{
+    "name": "example-client/gra",
+    "description": "GRA Modules",
+    "require": {
+        "php": "~5.5.0|~5.6.0|~7.0.0",
+        "magento/magento-composer-installer": "*"
+    },
+    "type": "magento2-module",
+    "autoload": {
+        "files": [
+            "src/SapConnector/registration.php",
+            "src/ServiceChat/registration.php",
+            "src/StoreLocator/registration.php"
+        ],
+        "psr-4": {
+            "ExampleClient\\SapConnector\\": "src/SapConnector",
+            "ExampleClient\\ServiceChat\\": "src/ServiceChat",
+            "ExampleClient\\StoreLocator\\": "src/StoreLocator"
+        }
+    }
+}
